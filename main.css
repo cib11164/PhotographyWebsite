@@ -1,27 +1,178 @@
-.display-1 {
-    color:red;
+body {
+    margin: 0;
 }
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    background-color: rgb(250, 249, 248);
+}
+
+#logo {
+    font-family: "Island Moments", cursive;
+    font-weight: lighter;
+}
+
+.logo-nav-container {
+    align-items:center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+.menu-item, .title {
+    font-family: "Castoro Titling", cursive;
+}
+
+.menu-item {
+    color:black;
+    padding: 0 0 0 15px;
+    text-decoration: none;
+}
+
+.menu-item:hover{
+    background-color:rgba(134, 133, 133, 0.185);
+}
+
+#tagline {
+    font-family: "Island Moments", cursive;
+    margin: 0;
+    text-align: end;
+}
+
+.title {
+    font-weight: lighter;
+    margin: 30px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* image grid */
+
+.grid-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-tile {
+    margin-bottom: 20px;
+    width: 100%;
+    opacity: .7;
+}
+
+#homeImage {
+    width: auto;
+    height: 100%;
+}
+
+.grid-tile:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 10px black;
+    transform: scale(1.01);
+  }
+
+/*to vertically position the text, used position https://www.w3schools.com/css/css_align.asp*/
+#landQuote, #seaQuote {
+    position: relative;
+    top:20%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.blockquote-footer {
+    font-size: smaller;
+}
+
+.footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+}
+
+.copyright {
+    font-family: "Castoro Titling", cursive;
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        padding: 20px 50px;
+        font-size: 10px
+    }
+
+    .grid-container {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .header {
+        padding: 30px 80px;
+        height: 200px;
+        font-size: 15px;
+    }
+
+    #logo {
+        font-size: 60px;
+    }
+
+    #tagline {
+        font-size: 20px;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: unset;
+    }
+
+    .grid-container {
+        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 80px;
+    }
+
+    .grid-tile {
+        margin-bottom: 40px;
+    }
+
+    .last-grid-column {
+        display: none;
+    }
+}
+
+/* additional code for buttons and social icons below 
+
+.social-icon {
+    display: inline-block;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 4px;
+    color: tomato;
+    background-color: #5e694a;
+}
+
+.social-icon a:hover {
+    color: #42a8bf;
+  }
+
 
 .btn-primary:hover{
     background-color:pink;
 }
 
-/* use this site for reference: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background*/
-
-.row {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    gap: 15px 15px;
-    padding: 0;
-    margin: 0;
-    list-style:none;
-}
-
-.img {
-    padding: 10px;
-    width: auto;
-    height: auto;
-    margin-top: 10px;
-    line-height: 150px;
-}
+*/
