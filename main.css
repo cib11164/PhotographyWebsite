@@ -106,19 +106,28 @@ body {
         font-size: 10px
     }
 
+    .nav-mobile {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: unset;
+    }
+
     .grid-container {
         display: grid;
         gap: 20px;
         grid-template-columns: repeat(2, 1fr);
         margin: 50px;
     }
+
 }
 
 @media only screen and (min-width: 992px) {
     .header {
         padding: 30px 80px;
         height: 200px;
-        font-size: 15px;
+        font-size: 20px;
     }
 
     #logo {
