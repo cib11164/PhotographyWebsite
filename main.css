@@ -151,7 +151,6 @@ list-style: none;
         grid-template-columns: repeat(2, 1fr);
         margin: 50px;
     }
-
 }
 
 @media (max-width: 768px) {
