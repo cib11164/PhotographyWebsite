@@ -168,8 +168,7 @@ list-style: none;
     .hamburger.active .bat:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
-    /*hiding the menu items, positioning them in
-    the hamburger*/
+    /*hiding the menu items, positioning them in the hamburger*/
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -201,8 +200,7 @@ list-style: none;
     .hamburger.active .bat:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
-    /*hiding the menu items, positioning them in
-    the hamburger*/
+    /*hiding the menu items, positioning them in the hamburger*/
     .nav-menu {
         position: fixed;
         left: -100%;
