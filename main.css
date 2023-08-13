@@ -151,6 +151,40 @@ list-style: none;
         grid-template-columns: repeat(2, 1fr);
         margin: 50px;
     }
+
+}
+
+@media (max-width: 768px) {
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bat:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bat:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bat:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    /*hiding the menu items, positioning them in
+    the hamburger*/
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: right;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
 }
 
 @media (max-width: 768px) {
