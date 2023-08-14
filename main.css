@@ -171,7 +171,7 @@ list-style: none;
     /*hiding the menu items, positioning them in
     the hamburger*/
     .nav-menu {
-        position: fixed;
+        position: relative;
         left: -100%;
         top: 70px;
         gap: 0;
