@@ -172,7 +172,11 @@ list-style: none;
     the hamburger*/
     .nav-menu {
         position: relative;
+<<<<<<< HEAD
+        left: -100vw;
+=======
         left: -100%;
+>>>>>>> main
         top: 70px;
         gap: 0;
         flex-direction: column;
