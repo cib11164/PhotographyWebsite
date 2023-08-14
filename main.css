@@ -170,8 +170,8 @@ list-style: none;
     }
     /*hiding the menu items, positioning them in the hamburger*/
     .nav-menu {
-        position: fixed;
-        left: -100%;
+        position: relative;
+        left: -100vw;
         top: 70px;
         gap: 0;
         flex-direction: column;
